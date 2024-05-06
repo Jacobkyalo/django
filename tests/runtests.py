@@ -36,6 +36,7 @@ try:
     import MySQLdb
 except ImportError:
     pass
+
 else:
     # Ignore informational warnings from QuerySet.explain().
     warnings.filterwarnings("ignore", r"\(1003, *", category=MySQLdb.Warning)
